@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { getAuth, createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
+import { doc, setDoc, serverTimestamp } from "firebase/firestore";
 import { db } from '../firebase.config.js';
+import { toast } from 'react-toastify';
 import { ReactComponent as ArrowRightIcon } from '../assets/svg/keyboardArrowRightIcon.svg';
 import visibilityIcon from '../assets/svg/visibilityIcon.svg';
 
@@ -31,10 +33,24 @@ export const SingUp = () => {
                 displayName: name
             })
 
+            const formDataCopy = { ...formData };
+            delete formDataCopy.password;
+            formDataCopy.timeStamp = serverTimestamp();
+
+            await setDoc(doc(db, 'users', user.uid), formDataCopy);
+
             navigate('/');
 
         } catch (error) {
-            console.log(error);
+            toast.error('Something going wrong with registration', {
+                position: "top-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+            });
         }
 
     };
