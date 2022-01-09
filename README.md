@@ -9,6 +9,7 @@ Find and list houses for sale or for rent.
 - React Router v6 (useLocation, useNavigate)
 - Firebase
 - React Toastify
+- React Spinners
 
 ## Requirements
 
