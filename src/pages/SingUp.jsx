@@ -6,6 +6,7 @@ import { db } from '../firebase.config.js';
 import { toast } from 'react-toastify';
 import { ReactComponent as ArrowRightIcon } from '../assets/svg/keyboardArrowRightIcon.svg';
 import visibilityIcon from '../assets/svg/visibilityIcon.svg';
+import { OAuth } from '../components/OAuth.jsx';
 
 
 
@@ -129,12 +130,11 @@ export const SingUp = () => {
 
                 </form>
 
-                {/* Google OAuth Component */}
-
                 <Link to='/sing-in' className='registerLink'>
                     Sign In Instead
                 </Link>
 
+                <OAuth />
 
             </div>
         </>
