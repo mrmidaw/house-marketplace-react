@@ -10,6 +10,7 @@ Find and list houses for sale or for rent.
 - Firebase
 - React Toastify
 - React Spinners
+- React Icons
 
 ## Requirements
 
