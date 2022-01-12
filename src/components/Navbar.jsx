@@ -38,7 +38,7 @@ export const Navbar = () => {
                             height='36px'
                         />
                         <p className={pathMatchRoute('/offers') ? 'navbarListItemNameActive' : 'navbarListItemName'}>
-                            Offer
+                            Offers
                         </p>
                     </li>
 

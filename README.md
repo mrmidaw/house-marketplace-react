@@ -6,6 +6,7 @@ Find and list houses for sale or for rent.
 
 - JavaScript
 - React, React-router-dom
+- React Hooks
 - React Router v6 (useLocation, useNavigate)
 - Firebase
 - React Toastify

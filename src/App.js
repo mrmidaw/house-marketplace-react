@@ -11,6 +11,7 @@ import { SingUp } from './pages/SingUp';
 import { Category } from "./pages/Category";
 import { Navbar } from "./components/Navbar";
 import { PrivateRoute } from "./components/PrivateRoute";
+import { CreateListing } from "./pages/CreateListing";
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
           <Route path="/sing-in" element={<SingIn />} />
           <Route path="/sing-up" element={<SingUp />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
+          <Route path="/create-listing" element={<CreateListing />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>
         <Navbar />
