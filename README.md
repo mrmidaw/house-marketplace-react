@@ -20,8 +20,9 @@ First, you should install dependencies using
 
 ## Geolocation
 
-The listings use Google geocoding to get the coords from the address field. You need to either rename .env.example to .env and add your Google Geocode API key OR in the CreateListing.jsx file you can set geolocationEnabled to "false" and it will add a lat/lng field to the form.
-
+The project use google geolocation. By default, it is off and manual input of latitude and longitude is used. To enable address auto detection, you need to:
+- insert Google Geocode API key in the ENV file
+- in the CreateListing.jsx file.line 9 => change 'false' to 'true'
 ## Firebase
 
 You should create firebase.config.js file in src folder with recommended parameters (rules.txt)
