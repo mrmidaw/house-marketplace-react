@@ -12,7 +12,8 @@ Find and list houses for sale or for rent.
 - React Toastify
 - React Spinners
 - React Icons
-
+- React Leaflet
+- React Swiper 
 ## Requirements
 
 First, you should install dependencies using 
