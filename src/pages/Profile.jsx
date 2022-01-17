@@ -1,14 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { getAuth, updateProfile } from 'firebase/auth';
-import { updateDoc, doc, collection, getDocs, query, where, orderBy, deleteDoc, getDoc } from '@firebase/firestore';
+import { updateDoc, doc, collection, getDocs, query, where, orderBy, deleteDoc } from '@firebase/firestore';
 import { db } from '../firebase.config';
 import { Link, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { ListingItem } from '../components/ListingItem';
 import arrowRight from '../assets/svg/keyboardArrowRightIcon.svg';
 import homeIcon from '../assets/svg/homeIcon.svg';
-import { Spinner } from '../components/Spinner';
-
 
 export const Profile = () => {
     const auth = getAuth();

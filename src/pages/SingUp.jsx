@@ -8,8 +8,6 @@ import { ReactComponent as ArrowRightIcon } from '../assets/svg/keyboardArrowRig
 import visibilityIcon from '../assets/svg/visibilityIcon.svg';
 import { OAuth } from '../components/OAuth.jsx';
 
-
-
 export const SingUp = () => {
 
     const [showPassword, setShowPassword] = useState(false);

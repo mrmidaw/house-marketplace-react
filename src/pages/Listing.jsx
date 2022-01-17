@@ -5,6 +5,7 @@ import { getDoc, doc } from 'firebase/firestore';
 import { getAuth } from 'firebase/auth';
 import { db } from '../firebase.config';
 import { Spinner } from '../components/Spinner';
+import { Helmet } from "react-helmet";
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
@@ -43,6 +44,11 @@ export const Listing = () => {
 
     return (
         <main>
+            {/* Helmet give console warning
+            <Helmet>
+                <title>{listing.name}</title>
+            </Helmet> */}
+
             <Swiper
                 slidesPerView={2}
                 pagination={{ clickable: true }}
