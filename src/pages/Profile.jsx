@@ -105,7 +105,7 @@ export const Profile = () => {
 
     const onLogout = () => {
         auth.signOut();
-        navigate('/');
+        navigate('/sing-in');
     };
 
 
