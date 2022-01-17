@@ -1,6 +1,6 @@
 # House Marketplace
 
-Find and list houses for sale or for rent. You can sign in with google.
+Find and list houses for sale or for rent. You can sign in with google.Once authenticated, you can create, delete or edit your houses posters.
 
 ## Used Technologies:
 
